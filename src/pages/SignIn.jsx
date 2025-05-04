@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle, faApple } from "@fortawesome/free-brands-svg-icons";
-import useUserStore from "../components/store";
+import useUserStore from "../components/Store";
 
 export default function SignIn() {
   const [Error, setError] = useState(false);
