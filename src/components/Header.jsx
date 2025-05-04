@@ -7,10 +7,10 @@ import {
   faUser,
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
-import useUserStore from "./store";
+import useUserStore from "./Store";
 export default function Header() {
   const token = useUserStore((state) => state.token)
-  
+
   const navigate = useNavigate();
   return (
     <div>
