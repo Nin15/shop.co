@@ -6,9 +6,8 @@ import CategoryPage from "./pages/CategoryPage";
 import Cart from "./pages/Cart";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
-import useUserStore from "./components/store";
+import useUserStore from "./components/Store"
 import { useEffect } from "react";
-import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const token = useUserStore((state) => state.token);
