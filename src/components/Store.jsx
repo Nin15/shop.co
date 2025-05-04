@@ -10,7 +10,7 @@ const useUserStore = create(
 
         setTimeout(() => {
           set({ token: null });
-        }, 10000000);
+        }, 10000);
       },
       setUserInfo: (userInfoData) => {
         set({ userInfo: userInfoData });

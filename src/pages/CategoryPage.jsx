@@ -52,9 +52,10 @@ export default function CategoryPage() {
   });
 
   const productsToDisplay =
-    filteredProducts.length > 0
-      ? filteredProducts.slice((page - 1) * 9, page * 9)
-      : paginatedProducts;
+  filteredProducts.length > 0
+    ? filteredProducts.slice((page - 1) * 9, page * 9)
+    : allProducts.slice((page - 1) * 9, page * 9);
+
 
   return (
     <div className="flex mt-7 relative flex-col justify-center gap-[10px] items-center ">
